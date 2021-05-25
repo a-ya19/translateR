@@ -1,0 +1,32 @@
+.navbar-dark {
+    font-size:large;
+    background-color: maroon;
+    color: white;
+    padding:10px;
+}
+
+body {
+    margin: 0px;
+}
+
+.article {
+    color: black;
+    font-size: medium;
+    background-color: white;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.article-body {
+    font-size: small;
+}
+
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.highlightpop {
+    color: white;
+}
