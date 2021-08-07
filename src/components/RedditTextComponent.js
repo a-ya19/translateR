@@ -1,6 +1,17 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
+import { Card, CardHeader, Button } from 'reactstrap';
+
+import CommentList from './CommentList';
 
 class RedditText extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            showComments: false
+        }
+    }
+
     renderText() {
         let urlRegex = /(\(https?:\/\/[^\s]+)/g;
         let parts = this.props.text.split(urlRegex); // re is a matching regular expression
@@ -13,7 +24,9 @@ class RedditText extends Component {
     render() {
         let text = this.renderText()
         return (
-            <div>{text}</div>
+            <div>
+                {text}
+            </div>
         );
     }
 }
