@@ -3,13 +3,14 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import Article from './components/Article';
 import Header from './components/HeaderComponent';
+import { Navbar, NavbarBrand, NavItem } from 'reactstrap';
 
 function App() {
   const [articles, setArticles] = useState([]);
-  const [subreddit, setSubreddit] = useState('webdev');
+  const [subreddit, setSubreddit] = useState('china_irl');
 
   useEffect(() => {
-    fetch("https://www.reddit.com/r/china_irl.json").then(res => {
+    fetch("https://www.reddit.com/r/" + subreddit + ".json").then(res => {
       if (res.status != 200) {
         console.log("ERROR");
         return;
@@ -26,9 +27,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Navbar dark expand="md">
+        <NavbarBrand>
+            translateR
+        </NavbarBrand>
+          <input type="text" className="input" value={subreddit} onChange={e => setSubreddit(e.target.value)}/>
+      </Navbar>
       <div className="articles">
-        { (articles != null) ? articles.map( (article, index) => <Article key={index} article={article.data}/> ) : '' }
+        { (articles != null) ? articles.map( (article, index) => <Article key={index} article={article.data} subreddit={subreddit}/> ) : '' }
       </div>
     </div>
     

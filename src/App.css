@@ -30,3 +30,21 @@ body {
 .highlightpop {
     color: white;
 }
+
+.comment-header {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+.articleTitle {
+    flex-wrap: nowrap;
+    justify-content: right
+}
+
+.commentList {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
