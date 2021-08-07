@@ -8,5 +8,7 @@ This is a React.js web app that allows one to browse chinese language subreddits
 
 To run this project, simply clone the repository and type the following in terminal:
 
-### 'npm install // force if necessary'
-### 'yarn start'
+...
+npm install // force if necessary
+yarn start
+...
