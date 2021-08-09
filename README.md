@@ -1,6 +1,6 @@
 # translateR
 
-https://a-ya19.github.io/translateR/
+Github Pages Link: https://a-ya19.github.io/translateR/
 
 ## What is this?
 
